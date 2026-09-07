@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@import "tailwindcss";
+
+/* * {
+  font-family: Outfit;
+}
+
+select, input, textarea {
+  border: 1px solid #c2c2c2;
+  outline-color: #000000;
+  border-radius: 4px;
+}
+
+.active {
+  background-color: #ffebf5;
+  border-color: #676767;
+}   
+
+body[data-theme="light"] {
+  background: white;
+  color: black;
+}
+
+body[data-theme="dark"] {
+  background: #121212;
+  color: white;
+}
+
+body[data-theme="dark"] .list-group-item {
+  background-color: #1f1f1f;
+  color: white;
+  border-color: #333;
+}
+
+body[data-theme="dark"] .form-control {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+body[data-theme="dark"] .table {
+  color: white;
+}
+
+body[data-theme="dark"] .dropdown-menu {
+  background-color: #1f1f1f;
+}
+
+body[data-theme="dark"] .dropdown-item {
+  color: white;
+}
+:root {
+  --bg: white;
+  --text: black;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: white;
+} */
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+body[data-theme="light"] {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+body[data-theme="light"] .table {
+  --bs-table-bg: #ffffff;
+  --bs-table-color: #212529;
+  --bs-table-border-color: #dee2e6;
+  --bs-table-hover-bg: #f5f5f5;
+  --bs-table-hover-color: #212529;
+}
+
+
+/* =========================
+   DARK THEME
+========================= */
+
+body[data-theme="dark"] {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .table {
+  --bs-table-bg: #1f1f1f;
+  --bs-table-color: #ffffff;
+  --bs-table-border-color: #444444;
+  --bs-table-hover-bg: #2b2b2b;
+  --bs-table-hover-color: #ffffff;
+}
+
+body[data-theme="dark"] .table thead th {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .table tbody td {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .table-hover tbody tr:hover td {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+
+/* =========================
+   LIST GROUP
+========================= */
+
+body[data-theme="dark"] .list-group-item {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-color: #444444;
+}
+
+body[data-theme="dark"] .list-group-item:hover {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+body[data-theme="dark"] .form-control,
+body[data-theme="dark"] .form-select,
+body[data-theme="dark"] input,
+body[data-theme="dark"] select,
+body[data-theme="dark"] textarea {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+body[data-theme="dark"] .form-control::placeholder {
+  color: #aaaaaa;
+}
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+body[data-theme="dark"] .input-group-text {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+
+/* =========================
+   DROPDOWNS
+========================= */
+
+body[data-theme="dark"] .dropdown-menu {
+  background-color: #1f1f1f;
+  border-color: #444444;
+}
+
+body[data-theme="dark"] .dropdown-item {
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .dropdown-item:hover {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+
+/* =========================
+   MODALS
+========================= */
+
+body[data-theme="dark"] .modal-content {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .modal-header,
+body[data-theme="dark"] .modal-footer {
+  border-color: #444444;
+}

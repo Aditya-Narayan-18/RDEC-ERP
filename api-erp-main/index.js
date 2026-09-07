@@ -1,0 +1,42 @@
+const express = require('express');
+const app = express();
+const connect = require('./connection');
+const createAdmin = require('./createAdmin');
+const course = require('./routes/course');
+const branch = require('./routes/branch')
+const subject = require('./routes/subject')
+const subjectmap = require('./routes/subjectMapping')
+const faculty = require('./routes/faculty')
+const student = require('./routes/student')
+const user = require('./routes/user')
+const cors = require('cors');
+const timeSlot = require('./routes/timeSlot');
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use(cors())
+app.use(course)
+app.use(branch)
+app.use(subject)
+app.use(subjectmap)
+app.use(faculty)
+app.use(student)
+app.use(timeSlot);
+app.use(user)
+
+
+
+connect();
+createAdmin()
+
+
+
+
+app.listen(3000, (err) => {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("Server is running on Port: 3000");
+    }
+})
