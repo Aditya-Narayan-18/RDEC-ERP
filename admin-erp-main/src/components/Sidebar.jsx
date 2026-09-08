@@ -115,7 +115,14 @@ function Sidebar() {
               <i className="bi bi-person-workspace"></i>
               <span className="d-none d-md-inline">Faculty</span>
             </ListGroup.Item>
-
+            <ListGroup.Item
+              as={NavLink}
+              to="/exams"
+              className="d-flex align-items-center gap-3"
+            >
+              <i className="bi bi-people-fill"></i>
+              <span className="d-none d-md-inline">Faculty Teaching</span>
+            </ListGroup.Item>
             <ListGroup.Item
               as={NavLink}
               to="/students"
@@ -134,23 +141,8 @@ function Sidebar() {
               <i className="bi bi-clock-fill"></i>
               <span className="d-none d-md-inline">Time Slot</span>
             </ListGroup.Item>
-            {/* <ListGroup.Item
-              action
-              onClick={toggleTheme}
-              className="d-flex align-items-center gap-3"
-            >
-              <i
-                className={
-                  theme === "light" ? "bi bi-moon-stars-fill" : "bi bi-sun-fill"
-                }
-              ></i>
-              <span className="d-none d-md-inline">
-                {theme === "light" ? "Dark Mode" : "Light Mode"}
-              </span>
-            </ListGroup.Item> */}
           </ListGroup>
         </div>
-
         {/* Profile Dropdown */}
         <div className="border-top p-3 ">
           <Dropdown drop="up">
